@@ -1,0 +1,11 @@
+/.metadata/
+.DS_Store
+.classpath
+.project
+.settings/
+
+com.Selenium.OrangeHRMAutomation/.gitignore
+
+# Test output folders
+com.Selenium.OrangeHRMAutomation/Screenshots/
+com.Selenium.OrangeHRMAutomation/test-output/
