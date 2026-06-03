@@ -3,19 +3,19 @@ package SetUp;
 import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.BeforeMethod;
 
 public class BaseClass {
 	
-	protected WebDriver driver = SetUpBrowser.initdriver();
+	protected WebDriver driver;
 	
 	public void launchOrangeHRM() {
+		this.initDriver();
 		driver.get("https://opensource-demo.orangehrmlive.com");
-		try {
-			Thread.sleep(Duration.ofSeconds(10));
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+	}
+	
+	void initDriver() {
+		driver = SetUpBrowser.initdriver();
 	}
 
 }

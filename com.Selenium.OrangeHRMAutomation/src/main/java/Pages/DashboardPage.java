@@ -9,13 +9,12 @@ public class DashboardPage {
 	
 	WebDriver driver;
 	
-	DashboardPage(WebDriver driver){
+	public DashboardPage(WebDriver driver){
 		this.driver = driver;
 		PageFactory.initElements(driver,this);
 	}
 	
-	@FindBy(css = "button.oxd-main-menu-button")
-	WebElement mainMenuArrowButton;
+	
 	
 	
 
